@@ -1,0 +1,14 @@
+.custom-btn{
+ border : 1px solid #C19D60;
+    color: white;
+    padding: 0.5rem;
+    outline: none;
+
+    background-color: transparent;
+}
+
+.custom-btn:hover{
+    border-color: #C19D60;
+    background-color: #C19D60;
+    
+}

@@ -1,0 +1,25 @@
+.sticky-bar {
+  position: fixed;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 9999;
+}
+
+.social-icon {
+  margin: 5px;
+  color: #3b5998; /* Default Facebook color */
+  transition: color 0.3s;
+}
+
+.social-icon:hover {
+  color: #0078ff; /* Hover color for all icons */
+}
+
+.social-icon:nth-child(2) {
+  color: #25D366; /* WhatsApp color */
+}
+
+.social-icon:nth-child(3) {
+  color: #C13584; /* Instagram color */
+}
