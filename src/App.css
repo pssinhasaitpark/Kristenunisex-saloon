@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+.my-fontFamily {
+  font-family: "Libre Caslon Text", serif !important;
+}
+.my-fontFamily2 {
+  font-family: "Open Sans", sans-serif !important;
+}
+.my-fontcolor {
+  color: #c19d60 !important;
+}
+.my-bgcolor {
+  background-color: #c19d60 !important;
+}
+.bg-common{
+  background-color: #e9e5df;;
+}
+.service-border{
+ background-color: white;
+
+}
+.dropdown-item{
+  background-color: transparent !important;
+ 
+
+}
+.dropdown-item:hover{
+  color: #c19d60 !important;
+}
+.letter-spacing {
+  letter-spacing: 0.5em;  
+}
