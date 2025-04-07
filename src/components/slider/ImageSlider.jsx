@@ -14,7 +14,7 @@ const slides = [
     badge: "SINCE. 2012",
     heading: "Welcome to Kristane",
     subHeading: "Hair and beauty Salon",
-    discount: "MADHAPUR ,HYDERABAD",
+    discount: "Indore ,Indore",
   },
   {
     id: 2,

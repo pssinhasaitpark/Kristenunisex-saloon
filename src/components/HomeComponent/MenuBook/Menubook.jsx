@@ -54,7 +54,7 @@ export default function Menubook() {
   };
 
   return (
-    <div className="py-5  bg-dark text-white ">
+    <div className="py-5 bg-dark text-white">
       <div className="container py-5 my-5">
         <Heading title="Menu Book" backText="" subtitle1="Hair & Beauty" />
 

@@ -22,13 +22,13 @@ const Aboutus2 = () => {
               Hair Stylist
             </h1>
             <p className="sub-about my-fontFamily2 fw-light text-white">
-              At Kristane Unisex Salon, we are dedicated to providing
+              At Our Unisex Salon, we are dedicated to providing
               exceptional customer service and creating a memorable experience
               for each and every one of our clients. We believe that beauty is
               more than just skin deep, and we strive to help each client feel
               confident and empowered, both inside and out.
               <br />
-              Visit Kristane Unisex Salon today and let us help you look and
+              Visit Our Unisex Salon today and let us help you look and
               feel your best!
             </p>
             <div className="d-flex pt-4 justify-content-center justify-content-md-start">

@@ -1,14 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Button from "../Button/Button";
-import { kristane } from "../../assets";
 
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg  border-bottom z-3 position-absolute w-100">
       <div className="container">
         <Link className="navbar-brand text-white" to="/">
-          <img src={kristane} alt="" />
+         <p className="h1 text-white">Salonlogo</p>
         </Link>
 
         <button
@@ -19,7 +18,7 @@ const Navbar = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span className="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon "></span>
         </button>
 
         <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
@@ -121,7 +120,7 @@ const Navbar = () => {
 
             <Button
               buttonText="Book an Appointment"
-              navigateTo="/appointment"
+              navigateTo="/contact"
               className="my-fontFamily2"
             />
           </ul>

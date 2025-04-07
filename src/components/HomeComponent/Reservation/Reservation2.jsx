@@ -4,15 +4,31 @@ import { Navigation } from "swiper/modules";
 
 import { FaStar } from "react-icons/fa";
 import "./Reservation.css";
-import Button from "../../Button/Button";
 import { IoCallOutline } from "react-icons/io5";
 import { banner12 } from "../../../assets";
+
+import { reser2, reser3 } from "../../../assets/index";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/effect-fade";
+import "swiper/css/pagination";
 
 const slides = [
   {
     id: 1,
     text: "Experience All That Salon U Has To Offer…",
-    stars: 4,
+    stars: 5,
+  },
+
+  {
+    id: 2,
+    text: "Experience All That Salon U Has To Offer…",
+    stars: 5,
+  },
+  {
+    id: 3,
+    text: "Experience All That Salon U Has To Offer…",
+    stars: 5,
   },
 ];
 
@@ -52,7 +68,7 @@ const Reservation2 = () => {
                       <div className="d-flex ">
                         <div className="d-flex">
                           <div className="border rounded-circle d-flex align-items-center justify-content-center me-3">
-                            <IoCallOutline className="fs-2 p-1 m-2" />
+                            <IoCallOutline className="fs-2 p-1 m-2 text-white" />
                           </div>
                           <div className="">
                             <p className="m-0 fs-6 my-fontcolor my-fontFamily ">
@@ -79,7 +95,7 @@ const Reservation2 = () => {
               >
                 <h3 className="text-dark">Make A Reservation</h3>
                 <form action="">
-                  <div className="row">
+                  <div className="row px-3">
                     <div className="col-sm-6 p-3">
                       <input
                         type="text"
@@ -122,11 +138,8 @@ const Reservation2 = () => {
                         placeholder="time"
                       />{" "}
                     </div>
-                    <div className="w-100">
-                      <Button
-                        buttonText="CHECK AVAILABILTY"
-                        navigateTo="/appointment"
-                      />
+                    <div className="w-100 ">
+                     <button className="btn back my-fontFamily">Check Availability</button>
                     </div>
                   </div>
                 </form>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { KeratinnTreatment, before, after } from "../../../assets/index";
 import { Footer, Footermenu, Navbar } from "../../index";
 import { Col, Container, Image, Row } from "react-bootstrap";
@@ -13,6 +13,15 @@ const slide = [
 ];
 
 const KeratinTreatment = () => {
+  const [selectedImage, setSelectedImage] = useState(null); 
+  const handleImageClick = (imageSrc) => {
+    setSelectedImage(imageSrc); 
+  };
+
+  const closePreview = () => {
+    setSelectedImage(null); 
+  };
+
   return (
     <>
       <Navbar />
@@ -40,61 +49,36 @@ const KeratinTreatment = () => {
         ))}
       </div>
 
-      <div className="salon-content p-5 m-5 ">
+      <div className="salon-content p-5 m-5">
         <Container>
-          <Row className="d-flex align-items-stretch my-5 py-5 ">
-            <Col
-              lg={6}
-              md={6}
-              className="d-flex flex-column justify-content-center  p-5 mb-5  "
-            >
-              <h1 className="my-fontFamily fs-2 ">
-                Keratin Hair Treatment in Hyderabad
-              </h1>
+          <Row className="d-flex align-items-stretch my-5 py-5">
+            <Col lg={6} md={6} className="d-flex flex-column justify-content-center p-5 mb-5">
+              <h1 className="my-fontFamily fs-2">Keratin Hair Treatment</h1>
               <p className="text-secondary my-fontFamily2 fw-lighter">
-                Looking for the perfect solution to frizzy, unmanageable hair?
-                Kristane offers premium Keratin Hair Treatment in Hyderabad,
-                delivering silky, smooth, and healthy locks that transform your
-                look. Whether you're struggling with dryness, breakage, or
-                dullness, our advanced keratin treatments are tailored to
-                rejuvenate your hair and restore its natural shine.
+                Looking for the perfect solution to frizzy, unmanageable hair? Our Salon offers premium Keratin Hair Treatment, delivering silky, smooth, and healthy locks that transform your look.
               </p>
               <p className="text-secondary my-fontFamily2 fw-lighter">
-                Located in the heart of Madhapur, Kristane is your go-to
-                destination for high-quality hair care services. Our expert
-                stylists use globally trusted products and innovative techniques
-                to ensure long-lasting results. The keratin treatment not only
-                smoothens your hair but also strengthens it, making it resistant
-                to damage caused by heat styling and pollution.
-              </p>
-              <p className="text-secondary my-fontFamily2 fw-lighter">
-                Why choose Kristane? We prioritize personalized care, offering a
-                consultation to understand your hair’s unique needs. Our
-                commitment to excellence has made us a trusted choice for
-                Keratin Hair Treatment in Madhapur and surrounding areas.
-              </p>
-              <p className="text-secondary my-fontFamily2 fw-lighter">
-                Experience the ultimate transformation with Kristane. Say
-                goodbye to frizz and hello to sleek, manageable hair. Book your
-                appointment today and discover why we are the preferred
-                destination for keratin hair treatments in Hyderabad and
-                Madhapur!
+                The keratin treatment not only smoothens your hair but also strengthens it, making it resistant to damage caused by heat styling and pollution.
               </p>
             </Col>
             <div className="col">
               <div className="row d-flex justify-content-between h-100">
-                <div className="col-sm-6 mt-5  p-3">
+                <div className="col-sm-6 mt-5 p-3">
                   <Image
                     src={before}
-                    alt="Hair treatment service at Kristane salon"
-                    className="img-fluid mt-5 w-100  "
+                    alt="Before Keratin Treatment"
+                    className="img-fluid mt-5 w-100"
+                    onClick={() => handleImageClick(before)}
+                    style={{ cursor: "pointer" }}
                   />
                 </div>
                 <div className="col-sm-6 p-3">
                   <Image
                     src={after}
-                    alt="Hair treatment service at Kristane salon"
-                    className="img-fluid mb-4 w-100 "
+                    alt="After Keratin Treatment"
+                    className="img-fluid mb-4 w-100"
+                    onClick={() => handleImageClick(after)}
+                    style={{ cursor: "pointer" }}
                   />
                 </div>
               </div>
@@ -102,6 +86,42 @@ const KeratinTreatment = () => {
           </Row>
         </Container>
       </div>
+
+      {selectedImage && (
+        <div
+          className="modal show d-block"
+          style={{
+            position: "fixed",
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            backgroundColor: "rgba(0, 0, 0, 0.7)",
+            zIndex: 1050,
+          }}
+          onClick={closePreview} 
+        >
+          <div
+            className="modal-dialog modal-lg"
+            style={{
+              marginTop: "10vh",
+              marginLeft: "auto",
+              marginRight: "auto",
+            }}
+            onClick={(e) => e.stopPropagation()} 
+          >
+            <div className="modal-content">
+              <img
+                src={selectedImage}
+                alt="Preview"
+                className="img-fluid"
+                style={{ objectFit: "contain", maxHeight: "80vh" }}
+              />
+            </div>
+          </div>
+        </div>
+      )}
+
       <Footermenu />
       <Footer />
     </>

@@ -42,6 +42,7 @@ import nanoplastiaafter from "./Nanoplastia-after.jpeg"
 import facial from "./16770.jpeg"
 import facialservices from "./facial.jpeg"
 import facialservicess from "./facialservice.jpeg"
+import salonn from "./salonn.jpeg"
 
 
-export {banner,nanoplastia,facialservices,facialservicess,facial,nanoplastiabefore,nanoplastiaafter, banner2,coloring ,KeratinnTreatment,haircolor2,after,haircolor,womenwax,waxing,menwax, banner12,hairsalonmen,hairsalonwomen,before, banner5 ,gallery2,gallery5,gallery6,gallery7,gallery8, about, about2 ,salon ,gallery4 , Style ,hairsalon,gallery3, haircut , womenhairstyle , reser1 , reser2 ,banner8, reser3 ,chef1 , chef2 , chef3,kristane,Aboutcomponent};
+export {banner,nanoplastia,facialservices,salonn,facialservicess,facial,nanoplastiabefore,nanoplastiaafter, banner2,coloring ,KeratinnTreatment,haircolor2,after,haircolor,womenwax,waxing,menwax, banner12,hairsalonmen,hairsalonwomen,before, banner5 ,gallery2,gallery5,gallery6,gallery7,gallery8, about, about2 ,salon ,gallery4 , Style ,hairsalon,gallery3, haircut , womenhairstyle , reser1 , reser2 ,banner8, reser3 ,chef1 , chef2 , chef3,kristane,Aboutcomponent};

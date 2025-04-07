@@ -9,19 +9,19 @@ const Aboutus = () => {
         <div className="row">
           <div className="col-sm-6 d-flex flex-column justify-content-center ">
             <p className="about-badge fw-light  my-fontcolor my-fontFamily2 mb-1">
-              Kristane
+             Salon
             </p>
             <h1 className="about-heading my-fontFamily fw-light">
               {" "}
               Few Words About Us
             </h1>
             <div className="sub-about my-fontFamily2 fw-light">
-              Kristane Unisex Salon is a premier beauty destination that offers
+              Our Unisex Salon is a premier beauty destination that offers
               a wide range of professional hair and beauty services. Our salon
               is dedicated to providing high-quality services that are tailored
               to meet the unique needs and preferences of each of our clients.
               <br />
-              At Kristane Unisex Salon, we believe that every person deserves to
+              At Our Unisex Salon, we believe that every person deserves to
               look and feel their best, which is why we strive to create a warm,
               welcoming environment that encourages relaxation and rejuvenation.
               Our team of skilled and experienced hairstylists, makeup artists,
