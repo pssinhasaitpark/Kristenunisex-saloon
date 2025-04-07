@@ -10,10 +10,11 @@ const Footermenu = () => {
           <div className="col-12 col-md-4 text-center text-md-start mb-4">
             <h3 className="my-fontcolor my-fontFamily">About Us</h3>
             <p className="text-white footer-text fw-light">
-              From Hyderabad recommendations to online reviews, more people in
-              the Madhapur area are finding their way to Kristane Unisex Salon!
-              Call us today to schedule an appointment, or stop in and find out
-              more.
+              With rave reviews from Indore locals and glowing online
+              feedback, our Unisex Salon has quickly become a go-to destination
+              for those in the area. Whether you're in need of a fresh haircut,
+              rejuvenating treatment, or a full makeover, we’ve got everything
+              you need.
             </p>
             <Button buttonText="English" navigateTo="/menu" />
           </div>
@@ -21,10 +22,10 @@ const Footermenu = () => {
             <h3 className="my-fontcolor my-fontFamily">Contact Info</h3>
             <p className="text-white footer-text fw-light">
               Flat No 1-98/7/1 Fresh & Quality Supermarket Building, Arunodaya
-              Colony, Madhapur, Hyderabad, Telangana-500081
+              Colony, Indore , Madhya Pradesh-452001
             </p>
-            <h3 className="my-fontcolor my-fontFamily">8106597380</h3>
-            <h3 className="my-fontcolor my-fontFamily">7286912437</h3>
+            <h3 className="my-fontcolor my-fontFamily">123456789</h3>
+            <h3 className="my-fontcolor my-fontFamily">123455678</h3>
           </div>
           <div className="col-12 col-md-4 text-center text-md-start">
             <h3 className="my-fontcolor my-fontFamily">Subscribe</h3>

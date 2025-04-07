@@ -34,7 +34,7 @@ const Contactinfo = () => {
                   Flat No 1-98/7/1
                 </p>
                 <p className="text-gray-600 text-center">
-                  Madhapur, Hyderabad-500081
+                   Indore-452001
                 </p>
               </div>
             </div>
@@ -72,8 +72,8 @@ const Contactinfo = () => {
                 <h5 className="text-gray-800 text-center font-medium mb-2">
                   Phone
                 </h5>
-                <p className="text-amber-600 text-center m-0">8106597380</p>
-                <p className="text-amber-600 text-center">7286912437</p>
+                <p className="text-amber-600 text-center m-0">123456790</p>
+                <p className="text-amber-600 text-center">7234234547</p>
               </div>
             </div>
           </div>
@@ -104,7 +104,7 @@ const Contactinfo = () => {
                   e-Mail
                 </h5>
                 <p className="text-gray-600 text-center">
-                  contact@kristaneunisexsalon.com
+                  contact@example.com
                 </p>
               </div>
             </div>
@@ -114,7 +114,7 @@ const Contactinfo = () => {
 
       <div className="mt-5">
         <div className="container">
-          <p className="my-fontFamily2 my-fontcolor">Kristane</p>
+          <p className="my-fontFamily2 my-fontcolor">Salon</p>
           <h2 className="my-fontFamily2">Get in touch</h2>
           <p>
             Our Experienced Artists Are Waiting For You To Serve With High-End
@@ -135,9 +135,6 @@ const Contactinfo = () => {
             title="Google Map"
           />
 
-
-
-          
         </div>
       </div>
     </div>

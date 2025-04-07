@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   banner2,
   reser3,
@@ -21,7 +21,17 @@ const slide = [
   },
 ];
 
-const AboutComponent = () => {
+const gallery = () => {
+  const [selectedImage, setSelectedImage] = useState(null); 
+
+  const handleImageClick = (imageSrc) => {
+    setSelectedImage(imageSrc);
+  };
+
+  const closePreview = () => {
+    setSelectedImage(null);
+  };
+
   return (
     <>
       <Navbar />
@@ -53,13 +63,31 @@ const AboutComponent = () => {
         <div className="container">
           <div className="row g-4">
             <div className="col-12 col-md-4">
-              <img src={reser3} alt="Gallery 1" className="img-fluid" />
+              <img
+                src={reser3}
+                alt="Gallery 1"
+                className="img-fluid"
+                onClick={() => handleImageClick(reser3)}
+                style={{ cursor: "pointer" }}
+              />
             </div>
             <div className="col-12 col-md-4">
-              <img src={gallery2} alt="Gallery 2" className="img-fluid h-75" />
+              <img
+                src={gallery2}
+                alt="Gallery 2"
+                className="img-fluid h-75"
+                onClick={() => handleImageClick(gallery2)}
+                style={{ cursor: "pointer" }}
+              />
             </div>
             <div className="col-12 col-md-4">
-              <img src={gallery3} alt="Gallery 3" className="img-fluid" />
+              <img
+                src={gallery3}
+                alt="Gallery 3"
+                className="img-fluid"
+                onClick={() => handleImageClick(gallery3)}
+                style={{ cursor: "pointer" }}
+              />
             </div>
           </div>
         </div>
@@ -68,10 +96,22 @@ const AboutComponent = () => {
       <div className="container">
         <div className="row g-4 mb-2">
           <div className="col-12 col-md-6">
-            <img src={gallery4} alt="Gallery 4" className="img-fluid" />
+            <img
+              src={gallery4}
+              alt="Gallery 4"
+              className="img-fluid"
+              onClick={() => handleImageClick(gallery4)}
+              style={{ cursor: "pointer" }}
+            />
           </div>
           <div className="col-12 col-md-6">
-            <img src={gallery5} alt="Gallery 5" className="img-fluid" />
+            <img
+              src={gallery5}
+              alt="Gallery 5"
+              className="img-fluid"
+              onClick={() => handleImageClick(gallery5)}
+              style={{ cursor: "pointer" }}
+            />
           </div>
         </div>
       </div>
@@ -79,16 +119,69 @@ const AboutComponent = () => {
       <div className="container">
         <div className="row g-4 mt-1 py-5">
           <div className="col-12 col-md-4">
-            <img src={gallery6} alt="Gallery 6" className="img-fluid" />
+            <img
+              src={gallery6}
+              alt="Gallery 6"
+              className="img-fluid"
+              onClick={() => handleImageClick(gallery6)}
+              style={{ cursor: "pointer" }}
+            />
           </div>
           <div className="col-12 col-md-4">
-            <img src={gallery7} alt="Gallery 7" className="img-fluid" />
+            <img
+              src={gallery7}
+              alt="Gallery 7"
+              className="img-fluid"
+              onClick={() => handleImageClick(gallery7)}
+              style={{ cursor: "pointer" }}
+            />
           </div>
           <div className="col-12 col-md-4">
-            <img src={gallery8} alt="Gallery 8" className="img-fluid" />
+            <img
+              src={gallery8}
+              alt="Gallery 8"
+              className="img-fluid"
+              onClick={() => handleImageClick(gallery8)}
+              style={{ cursor: "pointer" }}
+            />
           </div>
         </div>
       </div>
+
+      {selectedImage && (
+        <div
+          className="modal show d-block"
+          style={{
+            position: "fixed",
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            backgroundColor: "rgba(0, 0, 0, 0.7)",
+            zIndex: 1050,
+          }}
+          onClick={closePreview}
+        >
+          <div
+            className="modal-dialog modal-lg"
+            style={{
+              marginTop: "10vh",
+              marginLeft: "auto",
+              marginRight: "auto",
+            }}
+            onClick={(e) => e.stopPropagation()} 
+          >
+            <div className="modal-content">
+              <img
+                src={selectedImage}
+                alt="Preview"
+                className="img-fluid"
+                style={{ objectFit: "contain", maxHeight: "80vh" }}
+              />
+            </div>
+          </div>
+        </div>
+      )}
 
       <Reservation2 />
       <Footermenu />
@@ -97,4 +190,4 @@ const AboutComponent = () => {
   );
 };
 
-export default AboutComponent;
+export default gallery;

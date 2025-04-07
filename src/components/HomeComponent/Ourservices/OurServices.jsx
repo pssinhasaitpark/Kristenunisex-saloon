@@ -4,32 +4,32 @@ const services = [
   {
     title: "Hair Care",
     description:
-      "At Kristane, we take immense pride in transforming people. Our hair experts offer the perfect solutions.",
+      "At our salon, we take great pride in bringing out the best in every client, and we are dedicated to helping you achieve the look you desire.",
   },
   {
     title: "Skin Care",
     description:
-      "Kristane offers a wide range of skin care treatments for women, men and teens, meeting their diverse needs.",
+      "Our salon offers a comprehensive range of skincare treatments for women, men, and teens, catering to all their unique needs.",
   },
   {
     title: "Body Care",
     description:
-      "Walk in to our ever so bliss-inspiring Spa and Salon and you will exactly know why your body is the temple of life.",
+      "Step into our tranquil spa and salon, and you'll instantly feel why your body truly deserves the best care.",
   },
   {
     title: "Makeup",
     description:
-      "A combined man years of 40 years in wedding make-up and hair, fashion and photographic make-up.",
+      "With over 40 years of combined experience in wedding makeup, hairstyling, fashion, and photographic makeup,.",
   },
   {
     title: "Colour",
     description:
-      "Your colour expert will listen to your colour goals and needs whilst assessing your skin tone, eye colour and hair texture.",
+      "Our color expert will carefully listen to your goals and preferences, eye color, and hair texture to create the perfect shade for you.",
   },
   {
     title: "Treatment",
     description:
-      "Your hairdresser will prescribe the perfect treatment and haircare solution to maintain beautiful hair and a healthy scalp.",
+      "Our expert hairdressers will recommend the ideal treatment and haircare routine to keep your hair vibrant and your scalp healthy.",
   },
 ];
 const OurServices = () => {

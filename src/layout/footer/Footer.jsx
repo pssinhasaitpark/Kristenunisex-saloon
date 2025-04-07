@@ -16,7 +16,7 @@ const Footer = () => {
         <Row className="align-items-center text-center text-md-start">
           <Col xs={12} md={6} className="mb-2 mb-md-0">
             <p className="mb-0">
-              © {new Date().getFullYear()} by virtuesys.com
+              © {new Date().getFullYear()} by example.com
             </p>
           </Col>
           <Col xs={12} md={6} className="text-md-end">

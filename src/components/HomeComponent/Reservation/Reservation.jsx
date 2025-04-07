@@ -99,7 +99,7 @@ const Reservation = () => {
 
           <div className="col-sm-6 ">
             <div className=" text-center ">
-              <div className="mt-4  mb-4 bg-dark ">
+              <div className="my-4 bg-dark ">
                 <div className="p-4">
                   <h2 className="mb-4 text-white my-fontFamily ">
                     Opening Hours
@@ -121,7 +121,7 @@ const Reservation = () => {
 
                   <Button
                     buttonText="MAKE A RESERVATION"
-                    navigateTo="/appointment"
+                    navigateTo="/contact"
                   />
 
                   <div className="mt-4 text-white ">
@@ -131,7 +131,7 @@ const Reservation = () => {
                     </p>
                     <p className="d-flex align-items-center justify-content-center">
                       <MapPin size={16} />
-                      Plot No 1-98/77, Madhapur, Hyderabad
+                      Plot No 1-98/77, Indore, Indore
                     </p>
                   </div>
                 </div>
